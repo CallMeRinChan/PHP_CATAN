@@ -22,8 +22,9 @@ class Tile
 
     public function __ToString(): string
     {
-        $print = "<tile>";
-        $print .= "</tile>";
+        $print = "<tile class='{$this->type}'>\n";
+        $print .= "<fiche> {$this->number} </fiche>";
+        $print .= "</tile>\n";
         return $print;
     }
 }
