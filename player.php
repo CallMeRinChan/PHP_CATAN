@@ -55,4 +55,13 @@ class Player
             "city" => array_pop($this->pieces[$type])
         };
     }
+
+    public function ReceivePiece(Building $building): int
+    {
+        return match ($building->getType()) {
+            "road" => array_push($this->pieces[$building->getType()]),
+            "village" => array_push($this->pieces[$building->getType()]),
+            "city" => array_push($this->pieces[$building->getType()])
+        };
+    }
 }

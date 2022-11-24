@@ -41,20 +41,4 @@ class Controller
     }
 }
 
-/*
-<catan>
-    <?=$b?>
-    <?=$c?>
-    <?=$d?>
-    <?=$e?>
-    <?=$a?>
-</catan>
 
-
-$a = new Board();
-
-$b = new Player(1,"Aardige jongeman");
-$c = new Player(2,"Onaardige jongeman");
-$d = new Player(3,"Hardwerkende jongeman");
-$e = new Player(4,"Luie jongeman");
-*/
